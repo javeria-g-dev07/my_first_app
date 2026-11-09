@@ -2,18 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:my_first_app/chatHistory.dart';
 
 
-void main() {
-  runApp(const MyApp());
-}
-class MyApp extends StatefulWidget {
+
+
+class Whatsapp extends StatefulWidget {
  
-  const MyApp({super.key});
+  const Whatsapp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  State<Whatsapp> createState() => _WhatsappState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _WhatsappState extends State<Whatsapp> {
  List <String> students =[
   'Javeria','Misbah','Saba','Maryam','laiba','Tayyaba','hajra',
  ' saneha',' Eman','zaniab','hiffza','samiya','hanam','arooj','komal','sadia',
@@ -21,8 +20,7 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
       appBar: AppBar(
         
       backgroundColor: const Color.fromARGB(255, 5, 110, 8),
@@ -121,7 +119,7 @@ class _MyAppState extends State<MyApp> {
       FloatingActionButton(onPressed: (){},
       child: Icon(Icons.chat),
       ),
-    ),
     );
+    
   }
 }

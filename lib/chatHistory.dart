@@ -21,8 +21,7 @@ class ChatHistory extends StatefulWidget {
   class _ChatHistoryState extends State<ChatHistory>{
     @override
     Widget build(BuildContext context){
-      return MaterialApp(
-        home: Scaffold(
+      return Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.blue,
             title: Text('chat'),
@@ -57,8 +56,8 @@ class ChatHistory extends StatefulWidget {
                     ),)
             ],
           )
-        ),
-      );
+        );
+      
     }
 
   }
