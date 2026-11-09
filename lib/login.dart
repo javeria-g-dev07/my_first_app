@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 
-void main() {
-  runApp(const MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
   
   
 
@@ -35,7 +33,7 @@ class MyApp extends StatelessWidget {
 
           children: [
             Text('welcom back',
-            style: TextStyle(rm
+            style: TextStyle(
             color: Colors. white,
             fontWeight: FontWeight.bold,
             fontSize: 40,

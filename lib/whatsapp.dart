@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
             prefixIcon:Icon(Icons.search),
             hintText:'Ask Meta AI or Search Here',
             border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(100.0),
+           borderRadius: BorderRadius.circular(100.0)
             )
           ),
            ),
@@ -76,13 +76,13 @@ class _MyAppState extends State<MyApp> {
                    },
                   leading: CircleAvatar(
                     child: Icon(Icons.person),
-                    ),
-                  
+                  ),
                   title: Text(students[index],
                   style: TextStyle(
                     color:Colors.white,
                   ),
                   ),
+                  
                   subtitle: Text(
                     isJaveria ?"I am fine don't worry":
                     "Hellow how are you?",
@@ -100,7 +100,7 @@ class _MyAppState extends State<MyApp> {
                        radius:10, 
                        backgroundColor: Colors.green,
                       child:Text(
-                      '1',
+                      '10',
                       style:TextStyle(
                         color: Colors.white,
                         fontSize: 12,
